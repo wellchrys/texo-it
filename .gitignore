@@ -1,0 +1,14 @@
+**/.DS_Store
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
+
+yarn.lock
+
+#env
+.env
+
+tmp/*
+!tmp/.gitkeep

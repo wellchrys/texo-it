@@ -31,3 +31,7 @@ Now you can visit [`localhost:3333`](http://localhost:3333/movie) from your brow
 | JDBC_PASSWORD                | Password of database  | **(IS EMPTY)**                                |
 
 Make sure the csv file is in the following directory `./src/file_name_csv`
+
+## Integration tests
+
+Run `yarn test`

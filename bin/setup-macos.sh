@@ -21,6 +21,7 @@ asdf install
 which -s python
 if [[ $? != 0 ]] ; then
   brew install python
+  brew install python-setuptools
 fi
 
 which -s openjdk

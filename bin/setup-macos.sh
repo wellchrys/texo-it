@@ -18,6 +18,11 @@ fi
 asdf plugin-add nodejs
 asdf install
 
+which -s python
+if [[ $? != 0 ]] ; then
+  brew install python
+fi
+
 which -s openjdk
 if [[ $? != 0 ]] ; then
   brew install openjdk

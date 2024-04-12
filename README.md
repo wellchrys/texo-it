@@ -4,6 +4,17 @@
 
 Before running the setup, make sure you got the values for `JDBC_URL`, `JDBC_DRIVERNAME`, `JDBC_USER` and `JDBC_PASSWORD`
 
+Make sure JAVA_HOME is pointed to the right location.
+
+It should be:
+
+`/Library/Java/JavaVirtualMachines/jdk1.8.0_401.jdk/Contents/Home/`
+The best way to set this properly is by exporting it:
+
+```bash
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`
+```
+
 If you are using Mac you can run:
 
 ```bash
@@ -18,7 +29,7 @@ Make sure the following ports will be available:
 Start the H2 Database with:
 
 ```bash
-java -cp ./h2/bin/h2-2.2.224.jar org.h2.tools.Server -tcp -tcpAllowOthers -tcpPort 5234 -baseDir ./ -ifNotExists`
+java -cp ./h2/bin/h2-2.2.224.jar org.h2.tools.Server -tcp -tcpAllowOthers -tcpPort 5234 -baseDir ./ -ifNotExists
 ```
 
 Start Express endpoint with `yarn dev:server`

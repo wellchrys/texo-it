@@ -28,6 +28,6 @@ Now you can visit [`localhost:3333`](http://localhost:3333/movie) from your brow
 | JDBC_URL                               | Primary H2 Database connection URL                                   | jdbc:h2:tcp://localhost:5234/mem:database_name;database_to_lower=true;DB_CLOSE_DELAY=-1                                      |
 | JDBC_DRIVERNAME                      | The database drive                                                   | org.h2.Driver                                                               |
 | JDBC_USER                                    | user of database                                       | sa                                                                  |
-| JDBC_PASSWORD                | Password of database **(IS EMPTY)** |                                |
+| JDBC_PASSWORD                | Password of database  | **(IS EMPTY)**                                |
 
 Make sure the csv file is in the following directory `./src/file_name_csv`

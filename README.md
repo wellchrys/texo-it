@@ -28,7 +28,7 @@ Make sure the following ports will be available:
 
 Start Express endpoint with `yarn dev:server`
 
-Now you can visit [`localhost:3333`](http://localhost:3333/movie) from your browser.
+Now you can visit [`localhost:3333/movie`](http://localhost:3333/movie) from your browser.
 
 ## Environment Variables
 

@@ -4,20 +4,13 @@ const supertest = require('supertest');
 const csv = require('csvtojson');
 const { seeder, initialize } = require('../src/app/movie');
 
+const initH2 = require('../src/app/database');
+
 describe('Endpoint validation', () => {
   it('Should be able receive the producer winners', async () => {
     const request = supertest(app);
 
-    await initialize();
-
-    const jsonArray = await csv(
-      {
-        delimiter: ";",
-        headers: ["year", "title", "studios", "producers", "winner"]
-      }
-    ).fromFile("./src/movielist.csv");
-
-    await seeder(jsonArray);
+    await initH2();
 
     const response = await request
       .get('/movie')
